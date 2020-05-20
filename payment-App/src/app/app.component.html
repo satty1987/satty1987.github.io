@@ -1,0 +1,212 @@
+<ng-container *ngIf="!isRecord; else unNavKit">
+    <h1>Sorry No Data Found</h1>
+</ng-container>
+<ng-template #unNavKit>
+    <div id="content">
+    <div>
+        <div class="grid">
+            <div class="grid__column grid--m-full grid--t-full grid--d-full" id="2">
+                <div class="smallarticle_1.2">
+                    <div class="article">
+                        <div>
+                            <div class="container">
+                                <div class="make-payment-wrapper">
+                                    <!---->
+                                    <div class="row">
+                                        <div class="Make-a-payment col-sm-12 page-title">
+                                            <h1>Make a Payment</h1>
+                                            <div class="sub-heading"> 
+												Name:- {{customer.customerName}}
+												Account #{{customer.customerBan}}
+                                                (7lines for testing)
+                                                <!---->
+                                                <div class="payment-desc">
+                                                    <p class="mt-2 d-flex"><span class="p-0"><img alt=" "
+                                                                data-savepage-src="\assets\images\information.png"
+                                                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAMAAAC6V+0/AAAABGdBTUEAALGPC/xhBQAAADlQTFRFAAAAgICAMzMzFRUVBgYGBAQEAwMDAwMDBQUFBQUFBAQEAwMDBAQEBAQEAwMDAwMDAwMDAAAAAwMDm/HV0wAAABF0Uk5TAAIFDCpCUVVrcIql1Nnc8/mhICxvAAAAiUlEQVQYlW2RSQ7DIBRDzZAwD/H9D5tCCSUqXoD0kPnGAE3ShFRKCkZi6swcyudAwpPRaaW0i6QXHXpWK8a5rfTdy3q0/braelR+bpCZFj8IyyxhGAUWiUiDQIeXHAMS9XB/7dBMKFRvqFgmxAofO1b7HPTANmhGGrBH2obfPnNfyL66bcn4+44blkoJT5AFSTEAAAAASUVORK5CYII="></span><span
+                                                            class="font-tele-hal pt-1">You are
+                                                            eligible to setup a payment arrangement to
+                                                            pay your balance in two future installments.</span>
+                                                    </p>
+                                                </div>
+                                                <div class="payment-desc">
+                                                    <p class="mt-2"> </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12">
+                                            <div class="media"><span class="icons dollor"><em aria-hidden="true"
+                                                        class="fa fa-usd"></em></span>
+                                                <div class="Make-a-payment media-body" style="width: 206px">
+                                                    <h3 tabindex="1">Payment amount</h3>
+                                                    <!---->
+                                                    <!---->
+                                                    <div>
+                                                        <div>
+                                                            <!---->
+                                                            <!---->
+                                                            <!---->
+                                                            <!---->
+                                                            <div>
+                                                                <!---->
+                                                                <p class="mrg-lt-5 def-msg">
+                                                                    <img alt=""
+                                                                        class="information font-size-20 mrg-rt-10"
+                                                                        data-savepage-src=".\assets\images\information.png"
+                                                                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAMAAAC6V+0/AAAABGdBTUEAALGPC/xhBQAAADlQTFRFAAAAgICAMzMzFRUVBgYGBAQEAwMDAwMDBQUFBQUFBAQEAwMDBAQEBAQEAwMDAwMDAwMDAAAAAwMDm/HV0wAAABF0Uk5TAAIFDCpCUVVrcIql1Nnc8/mhICxvAAAAiUlEQVQYlW2RSQ7DIBRDzZAwD/H9D5tCCSUqXoD0kPnGAE3ShFRKCkZi6swcyudAwpPRaaW0i6QXHXpWK8a5rfTdy3q0/braelR+bpCZFj8IyyxhGAUWiUiDQIeXHAMS9XB/7dBMKFRvqFgmxAofO1b7HPTANmhGGrBH2obfPnNfyL66bcn4+44blkoJT5AFSTEAAAAASUVORK5CYII=">
+                                                                    No payment is due at this time </p>
+                                                                <!---->
+                                                            </div>
+                                                            <!---->
+                                                            <!---->
+                                                            <div class="radio radio-primary radioBottomMar">
+                                                                <input id="radio_amount_other" name="radio_other"
+                                                                    tabindex="5" type="radio"><label
+                                                                    for="radio_amount_other">Other</label></div>
+                                                            <!---->
+                                                            <!---->
+                                                            <div class="radio radio-primary radioBottomMar">
+                                                                <input id="radio_amount_installment"
+                                                                    name="radio_installment" type="radio"><label
+                                                                    for="radio_amount_installment">Pay in
+                                                                    installments </label><br><span
+                                                                    class="installmentNote font-tele-hal"> Turns
+                                                                    off AutoPay and removes
+                                                                    per-line discount.</span><span
+                                                                    class="tooltip-install-txt" container="body"
+                                                                    placement="top"><img alt=" " class="tooltip-install"
+                                                                        data-savepage-src="\assets\images\informationBlk.png"
+                                                                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUBAMAAAB/pwA+AAAABGdBTUEAALGPC/xhBQAAACRQTFRFAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA////puYkVQAAAAp0Uk5TAAIFUVWKpdnc88bVI8MAAABqSURBVAiZY2BgYHKrnJ6iwAACFquAoBnEEl0FBoFAZhSEuZSBgRlIrd4FJAwYNGDMJgavVVCwhCELxlzGUAUkd4MULGeYBWOuBDNXQ5hVMOZysDYwcxnYMDBzCbIVSBYjOQfZkUhOh3sIALlcaEFFp8kiAAAAAElFTkSuQmCC"></span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="media"><span class="icons calendar-check"><img
+                                                        alt="Payment Date" class="payment-info"
+                                                        data-savepage-src=".\assets\images\icons\icon-calendar1.png"
+                                                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAAUBAMAAAByuXB5AAAABGdBTUEAALGPC/xhBQAAACRQTFRFAAAAAAAAt7e3HBwcHR0dtra2Hx8fAAAAHR0dAQEBHBwctra2sLbtyQAAAAZ0Uk5TAPX19fX1SNmceQAAAEBJREFUCJljYGAUYGBAI5QFIcCVIb0cAioYpkNZ5UisiVB14gwTGSAAlSUIhuIMhUgsmCwlrIVQeyUYdkGd0g0AYGcbVZCYeE0AAAAASUVORK5CYII="></span>
+                                                <div class="Make-a-payment media-body">
+                                                    <h3 class="paymentDateHeading" tabindex="11">Payment date</h3>
+                                                    <div>
+                                                        <!---->
+                                                        <div>
+                                                            <!---->
+                                                            <div>
+                                                                <p>
+                                                                    <!----><span class="lable-color">Today (April 24,
+                                                                        2020)</span>
+                                                                    <!----><a class="inline_link"
+                                                                        tabindex="12">Change</a></p>
+                                                            </div>
+                                                            <!---->
+                                                        </div>
+                                                        <!---->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="media payInfoMargin"><span class="icons credit-card"><img alt=""
+                                                        class="payment-info"
+                                                        data-savepage-src=".\assets\images\icons\payment_info_black.PNG"
+                                                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC0AAAAmBAMAAACi8w9qAAAABGdBTUEAALGPC/xhBQAAAC1QTFRFAAAAAQEBAgICAwMDBAQEEREREhISGRkZHh4eWFhYXFxc4uLi4+Pj5OTk////v1yXpAAAAGFJREFUKJFjeIcVPGDAKf5mOgMaqNwHEr+GLszAEA0SX4ApzgkSb8AUZweJO2BYzcBAjrgBTnFMQE1xBZqLY/eXwCATZxgg8QLMYAOnqwmY4uB0uBVTHJxuX+NI51gB1cQBxIrSLBcgiN0AAAAASUVORK5CYII="></span>
+                                                <div class="Make-a-payment media-body" style="width: 252px">
+                                                    <h3 class="pb-0">Payment information</h3>
+                                                    <!---->
+                                                    <div class="radio-btn-box">
+                                                        <div class="radio radio-primary"><input id="radio_1"
+                                                                name="radio_1" tabindex="30" type="radio"
+                                                                value="Bank"><label for="radio_1">Bank
+                                                                transfer</label>
+                                                            <!---->
+                                                        </div>
+                                                        <div class="radio radio-primary"><input id="radio_12"
+                                                                name="radio_1" tabindex="30" type="radio"
+                                                                value="Card"><label for="radio_12">Credit/debit
+                                                                card</label></div>
+                                                        <!---->
+                                                        <!---->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!---->
+                                    <div class="media mb-md-0"><span class="spacerBlk"></span>
+                                        <div class="Make-a-payment media-body col-md-7 col-sm-10 col-xs-9 pl-0">
+                                            <!---->
+                                            <div class="legal"><span>By
+                                                    clicking <strong>Submit</strong>, you
+                                                    acknowledge that you've read and agree to the </span><a
+                                                    class="legal_link" href="javascript:void(0)">Payment</a> and <a
+                                                    class="legal_link" href="javascript:void(0)">T-Mobile</a> Terms
+                                                and
+                                                Conditions and you authorize T-Mobile to charge
+                                                your card/debit your account. <div class="BG-modal"
+                                                    style="display: none;"></div>
+                                                <div class="modal terms-and-conditions-popup" role="dialog"
+                                                    tabindex="-1" style="display: none;">
+                                                    <div class="modal-dialog" role="document">
+                                                        <div class="modal-content">
+                                                            <div class="modal-header pb-2">
+                                                                <button aria-label="Close" class="close"
+                                                                    type="button"><span
+                                                                        aria-hidden="true">×</span></button>
+                                                                <h4 class="modal-title">
+                                                                </h4>
+                                                            </div>
+                                                            <div class="col-12 pb-2"><a class="print"
+                                                                    href="javascript:void(0)"><img alt=""
+                                                                        data-savepage-src="../../../assets/images/icons/icon_print_magenta.png"
+                                                                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAdBAMAAABPisE/AAAABGdBTUEAALGPC/xhBQAAABVQTFRF4gB05BB973a0+MLe+MPe/vj7////RtjaWwAAAEhJREFUGJVjSEMFDLTgJzCAABvZfFTzUhUZIEAoDMxPYoABNTA/EcpjMRAD8xPgfDYUPtgG7Hy2NBhFBB/IZIMROPgk+Y8iPgATXn9ywjwUEAAAAABJRU5ErkJggg==">Print
+                                                                </a></div>
+                                                            <div class="modal-body ">
+                                                                <div class="modal-scroll  Lorem-ipsum-dolor-si"
+                                                                    id="print"></div>
+                                                            </div>
+                                                            <div class="modal-footer">
+                                                                <button class="primary_btn marRgtTerms"
+                                                                    type="button">Close</button></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="">
+                                        <!---->
+                                        <div class="button-row row mrg-bm-20">
+                                            <div
+                                                class="col-lg-6 offset-lg-6 col-md-12 btn-wrapper text-md-center text-lg-right btn-wrapperMargin">
+                                                <button class="black_btn mrg-rt-10" tabindex="61">Cancel</button>
+                                                <!----><button class="primary_btn" tabindex="62"
+                                                    disabled="">Submit</button>
+                                                <!---->
+                                            </div>
+                                        </div>
+                                        <!---->
+                                    </div>
+                                    <!---->
+                                    <div class="media mb-5"><span class="spacerBlk"></span>
+                                        <div class="Make-a-payment media-body col-md-8 col-sm-10 col-xs-9 pl-0">
+
+                                            <div class="entrust-text d-inline-block align-middle "> This website
+                                                has a verified
+                                                certificate and uses SSL to encrypt data going between your Web
+                                                browser and the website. For
+                                                information about how we collect, use, disclose, and protect
+                                                your information, see the T-Mobile <a class="entrust-textlink"
+                                                    tabindex="0" target="_blank"
+                                                    href="https://www.t-mobile.com/website/privacypolicy.aspx">Privacy
+                                                    Policy</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</ng-template>
