@@ -8,7 +8,7 @@ declare var window : any;
 export class AppComponent {
 
 microAppLoader(event){
-  window.loadMicroApp(event);
+  window.onClickMenu(event);
 }
 logout(){
   window.logOut();
