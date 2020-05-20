@@ -1,7 +1,4 @@
-<ng-container *ngIf="!isRecord; else unNavKit">
-    <h1>I am getting sorry no data found</h1>
-</ng-container>
-<ng-template #unNavKit>
+
     <div id="content">
     <div>
         <div class="grid">
@@ -11,15 +8,16 @@
                         <div>
                             <div class="container">
                                 <div class="make-payment-wrapper">
-                                    <!---->
                                     <div class="row">
                                         <div class="Make-a-payment col-sm-12 page-title">
                                             <h1>Make a Payment</h1>
                                             <div class="sub-heading"> 
-												Name:- {{customer.customerName}}
-												Account #{{customer.customerBan}}
-                                                (7lines for testing)
-                                                <!---->
+                                                <h4 *ngIf="isRecord">
+                                                    Name:- {{customer.customerName}}
+                                                    Account #{{customer.customerBan}}
+                                                    (7lines for testing)
+                                                </h4>
+											
                                                 <div class="payment-desc">
                                                     <p class="mt-2 d-flex"><span class="p-0"><img alt=" "
                                                                 data-savepage-src="\assets\images\information.png"
@@ -209,4 +207,3 @@
         </div>
     </div>
 </div>
-</ng-template>
