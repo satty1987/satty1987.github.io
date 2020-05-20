@@ -9,6 +9,9 @@ app.get('/', function (req, res) {
 app.get('/payment', function (req, res) {
     res.sendfile('./payment.html');
 });
+app.get('/react', function (req, res) {
+    res.sendfile('./react.html');
+});
 
 const port = process.env.PORT || 3000;
 app.listen(port, () => console.log(`Example app listening on port port!`))
