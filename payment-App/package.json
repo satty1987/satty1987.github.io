@@ -9,7 +9,7 @@
     "e2e": "ng e2e",
     "start": "node server.js",
     "predeploy": "ng build --prod",
-    "build:element": "ng build --prod --output-hashing=none && sh concat-build.sh"
+    "build:element": "ng build --prod --output-hashing=none && node ./build.js"
   },
   "private": true,
   "dependencies": {
